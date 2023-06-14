@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+ <body>
+  <h1> Candlestick chart for {{symbol}}</h1>
+  <div id='chart' class='chart'></div>
+  <h1>Pie Chart</h1>
+  <div id="pie-chart-container"></div>
+
+</body>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+ var graphs = {{graphJSON | safe}};
+  Plotly.plot('chart',graphs,{});
+ var pieChart = {{graphJSONpie | safe}};
+ Plotly.newPlot('pie-chart-container', pieChart, {});
+</script>
+</html>

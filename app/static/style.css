@@ -1,0 +1,9 @@
+.error {
+    border: 1px solid crimson;
+    background-color: firebrick;
+    display: block;
+    width: 300px;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 10px;
+}
